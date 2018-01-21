@@ -3,12 +3,20 @@ parameter being passed and capitalize the first letter of each word. Words will 
 separated by only one space. */
 
 
+// First solution:
+// function LetterCapitalize(str) { 
+//     function getUpperCase(letter) {
+//         return letter.toUpperCase();
+//     }
+//     return str.split(" ")
+//               .map( word => word.replace(/\b\w/, getUpperCase) )
+//               .join(" ");
+// }
+
+// More concise version:
 function LetterCapitalize(str) { 
-    function getUpperCase(letter) {
-        return letter.toUpperCase();
-    }
     return str.split(" ")
-              .map( word => word.replace(/\b\w/, getUpperCase) )
+              .map( word => word.charAt(0).toUpperCase() + word.substring(1) )
               .join(" ");
 }
 
