@@ -1,5 +1,6 @@
-/* Have the function timeDiff(time1, time2) take two 
-string parameters in a form like "11:28 pm" and return the time difference between them as an object with two attributes: 'hours' and 'minutes'. */
+/* Have the function timeDiff(time1, time2) take two string parameters in a form like
+"11:28 pm" and return the time difference between them as an object with two
+attributes: 'hours' and 'minutes'. */
 
 
 function parseHrs(timeStr) {
